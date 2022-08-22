@@ -3,7 +3,6 @@ package one.digitainnovationation.desafioAcademia.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,12 +25,10 @@ public class aluno {
     private long id;
     private String nome;
     @Column(unique = true)
-    private String CPF;
+    private String Cpf;
     private String bairro;
     private LocalDate dataDeNascimento;
-    @OneToMany(mappedBy = "aluno" , fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "aluno", cascade = CascadeType.REMOVE , fetch = FetchType.LAZY)
     @JsonIgnore
     private List<avaliacaoFisica> avaliacoes = new ArrayList<>();
-
-
 }
