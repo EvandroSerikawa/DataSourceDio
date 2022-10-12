@@ -1,5 +1,6 @@
 package one.digitainnovationation.desafioAcademia.infra.jackson.ser;
 
+import one.digitainnovationation.desafioAcademia.infra.utils.JavaTimeUtils;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;

@@ -6,13 +6,15 @@ import one.digitainnovationation.desafioAcademia.entity.form.alunoForm;
 import one.digitainnovationation.desafioAcademia.entity.form.alunoUpdateForm;
 import one.digitainnovationation.desafioAcademia.infra.utils.JavaTimeUtils;
 import one.digitainnovationation.desafioAcademia.repository.alunoRepository;
-import one.digitainnovationation.desafioAcademia.service.alunoService;
+import one.digitainnovationation.desafioAcademia.service.IalunoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Service
-public class alunoServiceImpl implements alunoService {
+public class alunoServiceImpl implements IalunoService.IAlunoService {
 
     @Autowired
     private alunoRepository repository;

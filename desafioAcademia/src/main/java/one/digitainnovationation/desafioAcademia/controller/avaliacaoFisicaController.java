@@ -3,6 +3,7 @@ package one.digitainnovationation.desafioAcademia.controller;
 
 import one.digitainnovationation.desafioAcademia.entity.avaliacaoFisica;
 import one.digitainnovationation.desafioAcademia.entity.form.avaliacaoFisicaForm;
+import one.digitainnovationation.desafioAcademia.service.impl.avaliacaoFisicaServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

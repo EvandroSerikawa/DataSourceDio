@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Repository
-public class alunoRepository extends JpaRepository<aluno, Long> {
+public interface alunoRepository extends JpaRepository<aluno, Long> {
 
     /**
      *

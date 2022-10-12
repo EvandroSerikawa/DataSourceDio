@@ -4,13 +4,17 @@ import one.digitainnovationation.desafioAcademia.entity.aluno;
 import one.digitainnovationation.desafioAcademia.entity.avaliacaoFisica;
 import one.digitainnovationation.desafioAcademia.entity.form.avaliacaoFisicaForm;
 import one.digitainnovationation.desafioAcademia.entity.form.avaliacaoFisicaUpdateForm;
+import one.digitainnovationation.desafioAcademia.service.IavaliacaoFisicaService;
+import one.digitainnovationation.desafioAcademia.repository.avaliacaoFisicaRepository;
+import one.digitainnovationation.desafioAcademia.repository.alunoRepository;
+import one.digitainnovationation.desafioAcademia.repository.matriculaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class avaliacaoFisicaServiceImpl {
+public class avaliacaoFisicaServiceImpl implements IavaliacaoFisicaService {
 
     @Autowired
     private avaliacaoFisicaRepository avaliacaoFisicaRepository;

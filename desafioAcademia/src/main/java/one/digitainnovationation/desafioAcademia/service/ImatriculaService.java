@@ -5,7 +5,7 @@ import one.digitainnovationation.desafioAcademia.entity.matricula;
 
 import java.util.List;
 
-public interface matriculaService {
+public interface ImatriculaService {
 
     /**
      * Cria uma Matrícula e salva no banco de dados.

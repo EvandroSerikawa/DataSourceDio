@@ -7,7 +7,7 @@ import one.digitainnovationation.desafioAcademia.entity.form.alunoUpdateForm;
 
 import java.util.List;
 
-public interface alunoService {
+public interface IalunoService {
 
     public interface IAlunoService {
         /**

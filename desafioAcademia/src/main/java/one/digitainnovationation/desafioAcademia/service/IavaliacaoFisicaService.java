@@ -6,7 +6,7 @@ import one.digitainnovationation.desafioAcademia.entity.form.avaliacaoFisicaUpda
 
 import java.util.List;
 
-public interface avaliacaoFIsicaService {
+public interface IavaliacaoFisicaService {
 
     /**
      * Cria uma Avaliação Física e salva no banco de dados.

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class matriculaRepository extends JpaRepository<matricula, Long> {
+public interface matriculaRepository extends JpaRepository<matricula, Long> {
 
     /**
      *
